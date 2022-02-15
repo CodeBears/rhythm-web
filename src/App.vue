@@ -1,15 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="nav">
+    <a
+      href="https://www.linkedin.com/in/johnny-chen-6a4094188/"
+      style="vertical-align: middle"
+      target="_blank"
+    >
+      github</a
+    >|
+    <a href="https://github.com/CodeBears" style="vertical-align: middle" target="_blank"
+      >linkedin</a
+    >
+  </div>
+  <Board />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import Board from './components/Board.vue';
+
+const githubSVG = require('@/assets/github.svg');
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    Board,
+  },
+  data() {
+    return {
+      githubSVG,
+    };
   },
 };
 </script>
@@ -21,6 +39,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+#nav {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+
+  a {
+    &:hover {
+      color: darken(#eee, 10%);
+    }
+    font-weight: bold;
+    color: #eee;
+  }
 }
 </style>
