@@ -66,8 +66,7 @@ async function start() {
 <style scoped lang="scss">
 .rhythm-board {
   border: 3px solid pink;
-  max-width: 600px;
-  // height: 800px;
+  max-width: 700px;
   border-radius: 12px;
   padding: 20px;
   margin: 0px auto;
@@ -77,7 +76,7 @@ async function start() {
   flex-wrap: wrap;
   .button {
     width: 23%;
-    height: 36px;
+    height: 50px;
     background-color: #aaa;
     margin: 1%;
     margin-bottom: 30px;
@@ -101,6 +100,7 @@ async function start() {
   color: white;
   background-color: #666;
   padding: 10px;
+  border-radius: 10px;
   &:hover {
     background-color: goldenrod;
     cursor: pointer;

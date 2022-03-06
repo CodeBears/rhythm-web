@@ -1,24 +1,7 @@
 # rhythm-web
 
-## Project setup
-```
-yarn install
-```
+## INFO
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+A beat web
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[DEMO](http://rhythm.aquajohnny.com/)
